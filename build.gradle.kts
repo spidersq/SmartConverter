@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.zitiger.plugin"
-version = "0.17.0"
+version = "1.1"
 
 
 repositories {
@@ -30,6 +30,7 @@ intellijPlatform {
     pluginConfiguration {
         name = "SmartConverter"
         version = "1.1"
+        group = "com.zitiger.plugin"
     }
 }
 
