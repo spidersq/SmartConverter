@@ -2,6 +2,7 @@ package com.zitiger.plugin.converter.action;
 
 import com.intellij.ide.util.TreeClassChooser;
 import com.intellij.ide.util.TreeClassChooserFactory;
+import com.intellij.openapi.actionSystem.ActionUpdateThread;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.module.Module;
@@ -17,6 +18,7 @@ import com.zitiger.plugin.converter.generator.impl.ClassGenerator;
 import com.zitiger.plugin.converter.generator.impl.ListGenerator;
 import com.zitiger.plugin.converter.generator.impl.MethodGenerator;
 import com.zitiger.plugin.converter.util.ContextUtils;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * @author zitiger
@@ -103,5 +105,8 @@ public class ConvertGeneratorAction extends AnAction {
             return new MethodGenerator();
         }
     }
-
+    @Override
+    public @NotNull ActionUpdateThread getActionUpdateThread() {
+        return ActionUpdateThread.BGT;
+    }
 }

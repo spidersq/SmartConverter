@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.zitiger.plugin.converter</id>
     <name>Smart POJO Converter</name>
-    <version>1.0</version>
+    <version>1.1</version>
     <vendor email="zitiger@163.com" url="https://github.com/zitiger/SmartConverter">zitiger</vendor>
 
     <description><![CDATA[
@@ -143,8 +143,11 @@
         <group id="com.zitiger.plugin.converter.generate.group" popup="true">
             <separator/>
             <!-- Add your actions here -->
-            <action id="com.zitiger.plugin.converter.action.generator" class="com.zitiger.plugin.converter.action.ConvertGeneratorAction" text="Smart Converter" description="Smart Converter">
-                <keyboard-shortcut keymap="$default" first-keystroke="shift meta N"/>
+            <action id="com.zitiger.plugin.converter.action.generator"
+                    class="com.zitiger.plugin.converter.action.ConvertGeneratorAction"
+                    text="Smart Converter"
+                    description="Smart Converter">
+                <keyboard-shortcut keymap="$default" first-keystroke="ctrl shift n"/>
             </action>
             <add-to-group group-id="GenerateGroup" anchor="last"/>
         </group>

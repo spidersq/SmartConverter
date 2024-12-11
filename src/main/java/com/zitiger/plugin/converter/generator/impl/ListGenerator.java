@@ -13,7 +13,7 @@ import com.intellij.psi.PsiType;
 import com.intellij.psi.codeStyle.JavaCodeStyleManager;
 import com.intellij.psi.util.PsiTypesUtil;
 import com.zitiger.plugin.converter.exception.ConverterException;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.NotNull;
 
 /**

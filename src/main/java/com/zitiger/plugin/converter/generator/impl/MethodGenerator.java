@@ -7,7 +7,7 @@ import com.intellij.psi.util.PsiTreeUtil;
 import com.intellij.psi.util.PsiTypesUtil;
 import com.zitiger.plugin.converter.exception.ConverterException;
 import com.zitiger.plugin.converter.model.FieldMappingResult;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
